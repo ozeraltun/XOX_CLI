@@ -19,6 +19,7 @@ public:
 	bool checkFinish();
 	void Iterate();
 	void Results();
+	void Explain();
 };
 
 #endif

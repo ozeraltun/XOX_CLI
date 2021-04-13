@@ -59,7 +59,7 @@ void Game::Iterate() {
 		if (answer == "y") {
 			user.setSymbol(Symbol::symbol_X);
 			ai.setSymbol(Symbol::symbol_O);
-
+			std::cout << std::endl;
 			user.Play(xoxMap);
 		}
 		else if (answer == "n") {
@@ -84,5 +84,13 @@ void Game::Results() {
 		std::cout << "You LOST!" << std::endl;
 	else
 		std::cout << "It is a TIE!" << std::endl;
+}
+void Game::Explain() {
+	std::cout << "This is a XOX game..." << std::endl;
+	std::cout << "In order to reply questions enter y or n then press enter.." << std::endl;
+	std::cout << "In order to select locations use the table below: " << std::endl;
+	std::cout << "0|1|2" << std::endl;
+	std::cout << "3|4|5" << std::endl;
+	std::cout << "6|7|8" << std::endl << std::endl;
 }
 

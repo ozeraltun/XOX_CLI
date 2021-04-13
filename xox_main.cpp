@@ -14,6 +14,7 @@ int main()
 	* -Improve AI
 	*/
 	Game game;
+	game.Explain();
 	while (!game.checkFinish()) {
 		game.Iterate();
 	}
