@@ -64,7 +64,14 @@ std::vector<int> Map::CheckAvailableMoves() {
 	}
 	return allocate;
 }
-
+bool Map::hasEmpty() {
+	for (int i = 0; i < 9; i++) {
+		if (map_Values[i] == Symbol::empty) {
+			return true;
+		}
+	}
+	return false;
+}
 bool Map::checkFin() {
 	if ((((map_Values[0] == map_Values[1]) && (map_Values[1] == map_Values[2])) && (map_Values[0] != Symbol::empty))
 		|| (((map_Values[3] == map_Values[4]) && (map_Values[4] == map_Values[5])) && (map_Values[3] != Symbol::empty))

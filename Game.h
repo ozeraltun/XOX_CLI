@@ -1,5 +1,9 @@
 #ifndef _GAME_
 #define _GAME_
+#include <string>
+#include "Map.h"
+#include "Player.h"
+#include "AI_Player.h"
 
 class Game {
 public:

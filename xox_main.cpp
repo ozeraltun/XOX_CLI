@@ -11,7 +11,6 @@ int main()
 {
 	/*
 	* TODO:
-	* -TIE problem
 	* -Improve AI
 	*/
 	Game game;

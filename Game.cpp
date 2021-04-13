@@ -43,6 +43,14 @@ void Game::Iterate() {
 				return;
 			}
 		}
+		/*
+		* if user dont have available moves
+		*/
+		if (!xoxMap.hasEmpty()) {
+			is_Finished = true;
+			xoxMap.Show();
+			return;
+		}
 		user.Play(xoxMap);
 	}
 	else {
@@ -60,10 +68,11 @@ void Game::Iterate() {
 		}
 		else { std::cout << "ERROR at initial Question"; }
 	}
-
+	
 	is_Finished = xoxMap.checkFin();
 	if (is_Finished == true) {
 		winner = "user";
+		xoxMap.Show();
 	}
 
 	std::cout << " " << std::endl;

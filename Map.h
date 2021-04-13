@@ -14,6 +14,7 @@ public:
 	std::vector<int> CheckAvailableMoves();
 	bool checkMove(std::string str);
 	bool checkFin();
+	bool hasEmpty();
 private:
 	Symbol map_Values[9];
 };

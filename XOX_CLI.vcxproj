@@ -140,12 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AI_Player.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="xox_main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AI_Player.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Symbol.h" />
