@@ -5,7 +5,7 @@
 
 class AI_Player {
 public:
-	bool MakeRandomMove(Map& m);
+	void MakeRandomMove(Map& m);
 	void setSymbol(Symbol s);
 	Symbol getSymbol();
 public:

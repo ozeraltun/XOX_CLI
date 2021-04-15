@@ -72,21 +72,22 @@ bool Map::hasEmpty() {
 	}
 	return false;
 }
-bool Map::checkFin() {
-	if ((((map_Values[0] == map_Values[1]) && (map_Values[1] == map_Values[2])) && (map_Values[0] != Symbol::empty))
-		|| (((map_Values[3] == map_Values[4]) && (map_Values[4] == map_Values[5])) && (map_Values[3] != Symbol::empty))
-		|| (((map_Values[6] == map_Values[7]) && (map_Values[7] == map_Values[8])) && (map_Values[6] != Symbol::empty))) {
+bool Map::checkFin(Symbol s) {
+	if ((((map_Values[0] == map_Values[1]) && (map_Values[1] == map_Values[2])) && (map_Values[0] == s))
+		|| (((map_Values[3] == map_Values[4]) && (map_Values[4] == map_Values[5])) && (map_Values[3] == s))
+		|| (((map_Values[6] == map_Values[7]) && (map_Values[7] == map_Values[8])) && (map_Values[6] == s))) {
 		//std::cout << "Game finished row wise" << std::endl;
+		
 		return true;
 	}
-	else if ((((map_Values[0] == map_Values[3]) && (map_Values[3] == map_Values[6])) && (map_Values[0] != Symbol::empty))
-		|| (((map_Values[1] == map_Values[4]) && (map_Values[4] == map_Values[7])) && (map_Values[1] != Symbol::empty))
-		|| (((map_Values[2] == map_Values[5]) && (map_Values[5] == map_Values[8])) && (map_Values[2] != Symbol::empty))) {
+	else if ((((map_Values[0] == map_Values[3]) && (map_Values[3] == map_Values[6])) && (map_Values[0] == s))
+		|| (((map_Values[1] == map_Values[4]) && (map_Values[4] == map_Values[7])) && (map_Values[1] == s))
+		|| (((map_Values[2] == map_Values[5]) && (map_Values[5] == map_Values[8])) && (map_Values[2] == s))) {
 		//std::cout << "Game finished column wise" << std::endl;
 		return true;
 	}
-	else if ((((map_Values[0] == map_Values[4]) && (map_Values[4] == map_Values[8])) && (map_Values[0] != Symbol::empty))
-		|| (((map_Values[2] == map_Values[4]) && (map_Values[4] == map_Values[6])) && (map_Values[2] != Symbol::empty))) {
+	else if ((((map_Values[0] == map_Values[4]) && (map_Values[4] == map_Values[8])) && (map_Values[0] == s))
+		|| (((map_Values[2] == map_Values[4]) && (map_Values[4] == map_Values[6])) && (map_Values[2] == s))) {
 		//std::cout << "Game finished cross wise" << std::endl;
 		return true;
 	}

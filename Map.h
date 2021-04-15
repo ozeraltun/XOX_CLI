@@ -13,7 +13,7 @@ public:
 	std::string getVal(int pos);
 	std::vector<int> CheckAvailableMoves();
 	bool checkMove(std::string str);
-	bool checkFin();
+	bool checkFin(Symbol s);
 	bool hasEmpty();
 private:
 	Symbol map_Values[9];

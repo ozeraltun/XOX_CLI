@@ -15,7 +15,7 @@ int main()
 	*/
 	Game game;
 	game.Explain();
-	while (!game.checkFinish()) {
+	while (!game.getFinish()) {
 		game.Iterate();
 	}
 	game.Results();
