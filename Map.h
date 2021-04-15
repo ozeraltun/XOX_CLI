@@ -10,11 +10,11 @@ public:
 	~Map();
 	void Show();
 	void setVal(int pos, Symbol s);
-	std::string getVal(int pos);
-	std::vector<int> CheckAvailableMoves();
 	bool checkMove(std::string str);
 	bool checkFin(Symbol s);
 	bool hasEmpty();
+	std::string getVal(int pos);
+	std::vector<int> CheckAvailableMoves();
 private:
 	Symbol map_Values[9];
 };

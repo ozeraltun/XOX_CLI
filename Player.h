@@ -7,15 +7,11 @@
 class Player {
 public:
 	void Play(Map& m);
-	/// <summary>
-	/// 
-	/// </summary>
-	/// <param name="s"></param>
 	void setSymbol(Symbol s);
-	Symbol getSymbol();
 	std::string askInitialQ();
 	std::string askplayingQ();
 	std::string askLastQ();
+	Symbol getSymbol();
 public:
 	Symbol playerSymbol;
 };

@@ -16,17 +16,17 @@ public:
 public:
 	Game();
 	~Game();
-	bool getFinish();
 	void Iterate();
 	void Results();
 	void Explain();
 	void arrangeSymbols(std::string user_input);
-	bool checkUserFinish();
-	bool checkAIFinish();
 	void playSymbolX();
 	void playSymbolO();
-	bool isTie();
+	bool getFinish();
 	bool checkFinish();
+	bool checkUserFinish();
+	bool checkAIFinish();
+	bool isTie();
 };
 
 #endif
