@@ -12,6 +12,7 @@ int main()
 	/*
 	* TODO:
 	* -Improve AI
+	* -Ask to Restart game, restart if given "y" 
 	*/
 	Game game;
 	game.Explain();
