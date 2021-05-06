@@ -41,6 +41,9 @@ std::string Map::getVal(int pos) {
 	}
 	return str;
 }
+/*
+TODO:
+*/
 
 void Map::setVal(int pos, Symbol s) {
 	map_Values[pos] = s;
